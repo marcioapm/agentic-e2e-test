@@ -1,2 +1,7 @@
 # agentic-e2e-test
-Throwaway repo for Agentic Dashboard E2E smoke tests
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+Agentic E2E test repo
+
+Generated via mobile E2E test
