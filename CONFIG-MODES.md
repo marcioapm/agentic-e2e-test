@@ -1,4 +1,5 @@
-modes:
-  - local
-  - staging
-  - production
+# Configuration Modes
+
+- development
+- staging
+- production
