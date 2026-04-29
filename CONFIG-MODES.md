@@ -1,0 +1,4 @@
+modes:
+  - local
+  - staging
+  - production
