@@ -39,3 +39,4 @@ Tests run automatically on every push and pull request via GitHub Actions. See `
 ## Contributing
 
 This is a demo/throwaway repo, but PRs are welcome if you're testing the pipeline. Keep changes small and scoped to whatever task you were handed. Don't add real production logic here — it will be ignored or deleted.
+<!-- agentic-cdp-e2e: README v1 -->
