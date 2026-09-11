@@ -1,0 +1,28 @@
+name: e2e-smoke
+
+# Throwaway workflow for threadctl `workflow` command end-to-end verification
+# (marcioapm/threadctl issue #125). Public repo => free Actions minutes.
+# workflow_dispatch with an input so the dispatch-inputs path is exercised too.
+
+on:
+  workflow_dispatch:
+    inputs:
+      outcome:
+        description: "pass or fail"
+        required: false
+        default: "pass"
+        type: string
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report the requested outcome
+        run: echo "requested outcome = ${{ inputs.outcome }}"
+      - name: Succeed or fail on request
+        run: |
+          if [ "${{ inputs.outcome }}" = "fail" ]; then
+            echo "failing deliberately so the failed-job payload can be verified"
+            exit 1
+          fi
+          echo "ok"
